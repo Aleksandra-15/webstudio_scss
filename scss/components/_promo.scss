@@ -1,105 +1,48 @@
 .promo {
+	&__titel {
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 60px;
+		text-align: center;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+    	color: $color_5;
+	
+	}
+	animation: fadeInUp 2s 1s;
+	background: url(../../img/shapca.png) center/cover no-repeat;
+	padding: 200px 0;
+	margin-top: 70px;
 
-	.promo {
-		background: url(../../img/shapca.png) center/cover no-repeat;
-		padding: 200px 0;
-		margin-top: 70px;
-	  }
-  
-  animation: fadeInUp 2s 1s;
-  background: url(../../img/shapca.png) center/cover no-repeat;
-  padding: 200px 0;
-  margin-top: 70px;
 
-  &__inform{
-	font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    /* or 136% */
+&__btn {
+	&:hover {
+		animation: tada;
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+	animation: pulse 2s 3s infinite;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	height: 50px;
+	border: 0ch;
+	padding: 5px 20px;
+	width: 216px;
 	color: $color_5;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  &__btn {
-    &:hover {
-      animation: tada;
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-    animation: pulse 2s 3s infinite;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    height: 50px;
-    border: 0ch;
-    padding: 5px 20px;
-    width: 216px;
-    color: $color_5;
-    width: 216px;
-    height: 50px;
-    flex-shrink: 0;
-    transition: 1s;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    transition-property: transform;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-  }
-
-
-
-  .promo {
-    animation: fadeInUp 2s 1s;
-  }
-  .promo_btn:hover {
-    animation: tada;
-  }
-
-  .promo_btn {
-    animation: pulse 2s 3s infinite;
-
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    text-align: center;
-    letter-spacing: 0.06em;
-    height: 50px;
-    border: 0ch;
-    padding: 5px 20px;
-    width: 216px;
-    color: #ffffff;
-  }
-  .promo_btn {
-    width: 216px;
-    height: 50px;
-    flex-shrink: 0;
-    transition: 1s;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-    transition-property: transform;
-  }
-  .promo_btn:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-
-  .promo_btn {
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-  }
+	width: 216px;
+	height: 50px;
+	flex-shrink: 0;
+	transition: 1s;
+	box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+	transition-property: transform;
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+}
 }
