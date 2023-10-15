@@ -1,15 +1,31 @@
-footer {
+.footer {
   &__clasa {
     padding: 60px 0;
-    background: #2f303a;
+    background-color: $color_8;
     .container {
       display: flex;
       gap: 90px;
     }
   }
   &__logo {
+    span {
+      color: $color_1;
+    }
+    display: inline-block;
+
+    color: $color_5;
+    font-family: $font-family_1;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    } /* 
     display: inline-block;
     padding: 10px 10px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    } */
   }
   &__contakts {
     width: 300px;
@@ -17,17 +33,24 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     list-style-type: none;
-    margin-top: 15px;
+    
     &__link {
       text-decoration: none;
       margin-top: 10px;
       color: $color_3;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+      letter-spacing: 0.42px;
       &:hover {
         color: $color_1;
       }
     }
   }
-  .join_in {
+  
+  
     &__subtitel {
       font-weight: 700;
       font-size: 14px;
@@ -41,9 +64,10 @@ footer {
       margin: 0 auto;
       display: flex;
       gap: 10px;
-      justify-content: center;
+      justify-content: space-between;
+      padding-top: 20px;
     }
-  }
+  
   &__sohcial {
     &__soshial-link {
       justify-content: center;
@@ -59,18 +83,33 @@ footer {
       }
     }
   }
-  &__inset {
+ 
+    &__input{
+      border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+letter-spacing: 0.48px;
+width: 450px;
+height: 50px;
+padding: 0 0 0 16px;
+    }
     &__titel {
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;
-      display: flex;
+      font-family: "Roboto";
       align-items: center;
-      text-align: center;
-      letter-spacing: 0.06em;
+      padding-bottom: 20px;
       color: $color_5;
     }
-  }
+ 
   &__btn {
     color: $color_5;
     text-align: center;
@@ -81,5 +120,11 @@ footer {
     transition: 1s;
     height: 50px;
     border: 0px;
+
   }
+  &__form{
+    display: flex;
+    gap: 12px;
+  }
+
 }

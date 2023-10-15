@@ -11,6 +11,9 @@
             letter-spacing: 0.03em;
             margin-top: 30px;
             color: $color_2;
+            @media (max-width: 768px) {
+                font-size: 28px;
+              }
         }
         ul {
             padding: 0;
@@ -35,6 +38,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width:768px) {
+          max-width: 768px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
     }
     .img {
         object-fit: cover;

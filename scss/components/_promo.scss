@@ -7,14 +7,18 @@
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
     	color: $color_5;
-	
+	@media (max-width:768px) {
+		font-size: 26px;
+	}
 	}
 	animation: fadeInUp 2s 1s;
 	background: url(../../img/shapca.png) center/cover no-repeat;
-	padding: 200px 0;
-	margin-top: 70px;
+	padding: 100px 0;
+	margin-top: 70px; 
 
-
+@media(max-width:768px){
+	width: 768px;
+}
 &__btn {
 	&:hover {
 		animation: tada;
