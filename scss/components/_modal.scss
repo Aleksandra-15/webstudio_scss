@@ -19,22 +19,16 @@
         transform: translate(-50%, -50%);
         padding: 15px;
         
-    .open-modal {
-        width: 150px;
-        height: 25px;
-        border-radius: 14px;
-    }
+ 
     
-    .show {
-        display: block;
-    }
-    &__close__btn {
+  
+    &__close {
         position: absolute;
         top: 8px;
         right: 8px;
         border-radius: 100px;
         cursor: pointer;
-        background-color: $background-color_2;
+        background-color: $background-color_1;
         border: 1px solid rgba(0, 0, 0, 0.1);
         &:hover {
             color: $color_1;
@@ -49,8 +43,9 @@
         font-weight: 700;
         line-height: normal;
         letter-spacing: 0.6px;
+        margin-top: 20px;
     }
-    label {
+    &__label {
         color: $color_3;
         font-family: $font-family_1;
         font-size: 12px;
@@ -69,7 +64,9 @@
         cursor: pointer;
         background-position: 0 50%;
     }
-    textarea {
+    &__textareal{
+        display: block;
+        gap: 28px;
         color: $color_7;
         font-family: $font-family_1;
         font-size: 12px;
@@ -87,12 +84,12 @@
         cursor: pointer;
         margin-top: 4px;
     }
-    &__form {
+     &__form {
         display: flex;
         align-items: flex-start;
         padding: 25px;
         flex-direction: column;
-    }
+    } 
     &__check-form {
         width: 16px;
         height: 15px;
@@ -119,7 +116,7 @@
     &__form-check {
         display: flex;
         align-items: center;
-        padding: 20px 0 30px 45px;
+        padding: 20px 20px 30px 20px;
     }
     &__btn-form {
         border-radius: 4px;
@@ -138,6 +135,8 @@
         cursor: pointer;
         border: 0;
         margin: 0 auto;
+        display: block;
+        align-self: center;
     }
    &__form-div {
         width: 448px;
@@ -159,4 +158,10 @@
     }
     
 }
+
+
     }
+    .show{
+        display: block;
+        
+      }
