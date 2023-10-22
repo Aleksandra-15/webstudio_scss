@@ -1,8 +1,14 @@
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
+.container { 
+  @media (min-width: 320px) {
+   padding: 0 15px;
+  }
   @media (min-width: 768px) {
     max-width: 738px;
+    margin: 0 auto;
+  }
+  @media (min-width:1200px) {
+  max-width: 1170px;
+  margin: 0 auto;
   }
 }
 body{
