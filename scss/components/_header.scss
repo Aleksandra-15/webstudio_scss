@@ -1,5 +1,5 @@
 .header {
-  height: 70px;
+
   box-sizing: border-box;
   background-color: $background-color_1;
   position: fixed;
@@ -8,15 +8,14 @@
   opacity: 0.73;
   width: 100%;
   @media (min-width: 480px) {
-    padding: 21px 0;
-    height: 60px;
+    padding: 11px 0;
+    height: 80px;
   }
   @media (min-width: 768px) {
-    padding: 21px 0;
+   
+    height: 60px;
   }
-  @media (min-width: 1200px) {
-    padding: 25px 0;
-  }
+ 
   .container {
     display: flex;
     justify-content: space-between;
@@ -146,7 +145,7 @@
         width: 24px; 
  
         display: block; 
-        border: 2px solid #212121; 
+        border: 1px solid #212121; 
       } 
     } 
     @media (min-width: 768px) { 

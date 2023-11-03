@@ -19,6 +19,8 @@
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    width: 226px;
+    box-sizing:border-box;
     &:hover {
       path {
         fill: #2196f3;
@@ -28,13 +30,11 @@
   &__lists {
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     @media (max-width: 320px) {
       flex-wrap: wrap;
-    }
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
-      gap: 30px;
+      align-items: center;
+      justify-content: center;
     }
     @media (max-width: 1200px) {
       flex-wrap: wrap;

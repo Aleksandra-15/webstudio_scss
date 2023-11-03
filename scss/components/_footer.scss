@@ -1,8 +1,22 @@
 .footer {
+  &__title {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+    &:hover {
+      color: $color_5;
+    }
+  }
   &__clasa {
     padding: 60px 0;
     background-color: $color_8;
     width: 100%;
+    
     .container {
       display: flex;
       gap: 90px;
@@ -17,13 +31,13 @@
         justify-content: center;
         align-items: center;
       }
-     
     }
   }
   &__logo {
     span {
       color: $color_1;
     }
+    font-style: normal;
     display: inline-block;
     margin: 0;
     color: $color_5;
@@ -45,24 +59,13 @@
     justify-content: space-between;
     flex-direction: column;
     list-style-type: none;
-    @media (min-width: 480px) {
+    @media (max-width: 480px) {
       text-align: center;
     }
-
-    &__link {
-      text-decoration: none;
-      margin-top: 10px;
-      color: $color_3;
-      font-family: Roboto;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; /* 171.429% */
-      letter-spacing: 0.42px;
-      &:hover {
-        color: $color_1;
-      }
+    @media (max-width: 768px) {
+      text-align: center;
     }
+    
   }
 
   &__subtitel {
@@ -94,6 +97,10 @@
       margin-top: 20px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 100%;
+      i{
+        font-size: 22px;
+        font-weight: 400;
+      }
       &:hover {
         background: #2196f3;
       }
@@ -122,6 +129,9 @@
     width: 450px;
     height: 50px;
     padding: 0 0 0 16px;
+    @media (min-width: 420px) {
+      width: 360px;
+    }
   }
   &__titel {
     font-weight: 700;
