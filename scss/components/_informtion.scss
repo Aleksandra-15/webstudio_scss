@@ -17,13 +17,18 @@
   }
   &__items {
     box-sizing: border-box;
-
+    flex-wrap: wrap;
+    padding: 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
     list-style-type: none;
 
     gap: 8px;
+    @media (min-width: 320px) {
+      justify-content: flex-start;
+      
+    }
   }
 
   &__btn {
