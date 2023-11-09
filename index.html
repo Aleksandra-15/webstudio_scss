@@ -31,7 +31,7 @@
           <h2 class="header__logo">
             <span class="header__span">Web</span>Studio
           </h2>
-          <nav>
+          <nav class="nav">
             <ul class="header__links">
               <li class="header__item">
                 <a class="header__link" href="/">Студія</a>
@@ -55,10 +55,11 @@
             <i class="fa-solid fa-mobile fa-shake"></i> +38 096 111 11 11</a
           >
         </div>
-        <div class="header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="header__humburher">
+          <input class="header__input" type="checkbox" id="toggle" />
+          <label for="toggle" class="header__label">
+            <span class="toggle-btn"></span>
+          </label>
         </div>
       </div>
     </header>
@@ -838,7 +839,7 @@
       </section>
     </main>
 
-       <footer class="footer__clasa">
+    <footer class="footer__clasa">
       <div class="container">
         <address class="footer__contakts">
           <h2 class="footer__logo whin"><span>Web</span>Studio</h2>
@@ -851,7 +852,9 @@
           <a class="footer__title" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
-          <a class="footer__title" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="footer__title" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </address>
 
         <div class="footer__join">
@@ -882,8 +885,6 @@
           </ul>
         </div>
 
-     
-
         <div class="footer__inset">
           <h6 class="footer__titel">Підпишіться на розсилку</h6>
           <form class="footer__form">
@@ -906,7 +907,7 @@
           </form>
         </div>
       </div>
-    </footer> 
+    </footer>
     <div class="overlay">
       <div class="modal">
         <button class="modal__close">
@@ -977,7 +978,7 @@
         </form>
       </div>
     </div>
-  
+
     <script src="./js/wow.js"></script>
     <script src=".//js/skript.js"></script>
     <script

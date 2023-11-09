@@ -1,5 +1,66 @@
 .header {
-
+  input[type="checkbox"],
+  label {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    label {
+      height: 3px;
+      display: block;
+      width: 30px;
+      position: relative;
+      cursor: pointer;
+    }
+    .toggle-btn,
+    .toggle-btn::after,
+    .toggle-btn::before {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: black;
+      position: absolute;
+      right: 0;
+      transition: 0.5s;
+    }
+    .toggle-btn::after {
+      top: 5px;
+    }
+    .toggle-btn::before {
+      top: -5px;
+    }
+    &__humburher {
+      display: flex;
+      align-items: flex-end;
+    }
+    .nav {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      width: 50%;
+      height: 100vh;
+      left: -100%;
+      padding: 20px;
+      transition: 0.5s;
+      background: var(--Dark-Primary, #2a254b);
+      box-shadow: 0 12px 20px #00000033;
+    }
+    input[type="checkbox"]:checked ~ label .toggle-btn {
+      transform: rotate(-45deg);
+    }
+    input[type="checkbox"]:checked ~ label .toggle-btn::after {
+      transform: rotate(0);
+      top: 0;
+    }
+    input[type="checkbox"]:checked ~ label .toggle-btn::before {
+      transform: rotate(90deg);
+      top: 0;
+    }
+    input[type="checkbox"]:checked ~ .nav {
+      display: block;
+      left: 0;
+    }
+  }
   box-sizing: border-box;
   background-color: $background-color_1;
   position: fixed;
@@ -12,10 +73,9 @@
     height: 80px;
   }
   @media (min-width: 768px) {
-   
     height: 60px;
   }
- 
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -133,33 +193,4 @@
       justify-content: space-around;
     }
   }
-  &__hamburger { 
-    @media (min-width: 320px) { 
-      display: block; 
- 
-      display: flex; 
-      flex-direction: column; 
-      gap: 4px; 
-      span { 
-        transition: 0.5s; 
-        width: 24px; 
- 
-        display: block; 
-        border: 1px solid #212121; 
-      } 
-    } 
-    @media (min-width: 768px) { 
-      display: none; 
-    } 
-    &--active { 
-      span:nth-child(1) { 
-        transform: rotate(45deg) translateY(5px); 
-      } 
-      span:nth-child(2) { 
-        display: none; 
-      } 
-      span:nth-child(3) { 
-        transform: rotate(-45deg) translateY(-5px); 
-      } 
-    } 
-  }}
+}
