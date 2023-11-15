@@ -22,7 +22,7 @@
           <h2 class="header__logo">
             <span class="header__span">Web</span>Studio
           </h2>
-          <nav>
+          <nav class="nav">
             <ul class="header__links">
               <li class="header__item">
                 <a class="header__link" href="/">Студія</a>
@@ -46,10 +46,11 @@
             <i class="fa-solid fa-mobile fa-shake"></i> +38 096 111 11 11</a
           >
         </div>
-        <div class="header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="header__humburher">
+          <input class="header__input" type="checkbox" id="toggle" />
+          <label for="toggle" class="header__label">
+            <span class="toggle-btn"></span>
+          </label>
         </div>
       </div>
     </header>
@@ -74,8 +75,8 @@
             </li>
           </ul>
         </div>
-      </section> 
-    <section class="sit">
+      </section>
+      <section class="sit">
         <div class="container">
           <ul class="sit__items">
             <li class="sit__item">
@@ -140,7 +141,9 @@
           <a class="footer__title" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
-          <a class="footer__title" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="footer__title" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </address>
 
         <div class="footer__join">
@@ -171,8 +174,6 @@
           </ul>
         </div>
 
-     
-
         <div class="footer__inset">
           <h6 class="footer__titel">Підпишіться на розсилку</h6>
           <form class="footer__form">
@@ -195,7 +196,7 @@
           </form>
         </div>
       </div>
-    </footer> 
+    </footer>
     <script
       src="https://kit.fontawesome.com/efe48aa025.js"
       crossorigin="anonymous"
